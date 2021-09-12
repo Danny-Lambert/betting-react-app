@@ -111,6 +111,17 @@ li{
      border-radius: 10px;
      box-shadow: 0 0 10px lightgrey;
 }
+.iframe-table{
+    width: 50%;
+    height: 500px;
+    margin-bottom: 25%;
+    color:white;
+    background: #21313C;
+}
+.bottom-charts{
+    display: flex;
+    justify-content: center;
+}
 .r2r-logo{
     display: block;
     margin-left: auto;

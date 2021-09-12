@@ -88,6 +88,9 @@ return(
                 <Week2 />
                 <Week1 />
             </div>
+        </div>
+        <div class="row bottom-charts">
+        <iframe class= "iframe-table" src="https://charts.mongodb.com/charts-project-0-yabzy/embed/charts?id=d16819a3-c36d-414d-9b60-d977c7b0d700&autoRefresh=10&theme=dark"/>            
         </div>         
         {/* <ul className = "employees-list">
             {   
