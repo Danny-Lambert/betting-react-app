@@ -167,7 +167,7 @@ render() {
                     this.onSubmit();
                     this.onSubmitTwice()}
                     }>
-                        <h2 className = "employees-form-heading">Fill in the details below to add a bet</h2>
+                        <h2 className = "employees-form-heading">Fill in the betslip</h2>
                         <div className="form-group">
                             <label className ="form-labels">Who are you?</label>
                             <select id="WhoIsIt" value={this.state.who_is_it} onChange={this.onChangeWhoIsIt} className="form-answer-box form-answer-box-dropdown" required >
@@ -177,51 +177,7 @@ render() {
                                 <option value="Frank">Frank</option>
                             </select>
                         </div>
-                    {/* <div className="form-group editableFormGroup">
-                        <label className ="form-labels">Betting Weekend</label>
-                        <select id="what-weekend-is-it" class="form-answer-box form-answer-box-dropdown"  value={this.state.betting_weekend_selector} onChange={this.onChangeBettingWeekendSelector} required>
-                            <option value="BW1">Betting Weekend 1</option>
-                            <option value="BW2">Betting Weekend 2</option>
-                            <option value="BW3">Betting Weekend 3</option>
-                            <option value="BW4">Betting Weekend 4</option>
-                            <option value="BW5">Betting Weekend 5</option>
-                            <option value="BW6">Betting Weekend 6</option>
-                            <option value="BW7">Betting Weekend 7</option>
-                            <option value="BW8">Betting Weekend 8</option>
-                            <option value="BW9">Betting Weekend 9</option>
-                            <option value="BW10">Betting Weekend 10</option>
-                            <option value="BW11">Betting Weekend 11</option>
-                            <option value="BW12">Betting Weekend 12</option>
-                            <option value="BW13">Betting Weekend 13</option>
-                            <option value="BW14">Betting Weekend 14</option>
-                            <option value="BW15">Betting Weekend 15</option>
-                            <option value="BW16">Betting Weekend 16</option>
-                            <option value="BW17">Betting Weekend 17</option>
-                            <option value="BW18">Betting Weekend 18</option>
-                            <option value="BW19">Betting Weekend 19</option>
-                            <option value="BW20">Betting Weekend 20</option>
-                            <option value="BW21">Betting Weekend 21</option>
-                            <option value="BW22">Betting Weekend 22</option>
-                            <option value="BW23">Betting Weekend 23</option>
-                            <option value="BW24">Betting Weekend 24</option>
-                            <option value="BW25">Betting Weekend 25</option>
-                            <option value="BW26">Betting Weekend 26</option>
-                            <option value="BW27">Betting Weekend 27</option>
-                            <option value="BW28">Betting Weekend 28</option>
-                            <option value="BW29">Betting Weekend 29</option>
-                            <option value="BW30">Betting Weekend 30</option>
-                            <option value="BW31">Betting Weekend 31</option>
-                            <option value="BW32">Betting Weekend 32</option>
-                            <option value="BW33">Betting Weekend 33</option>
-                            <option value="BW34">Betting Weekend 34</option>
-                            <option value="BW35">Betting Weekend 35</option>
-                            <option value="BW36">Betting Weekend 36</option>
-                            <option value="BW37">Betting Weekend 37</option>
-                            <option value="BW38">Betting Weekend 38</option>
-                            <option value="BW39">Betting Weekend 39</option>
-                            <option value="BW40">Betting Weekend 40</option>
-                        </select>    
-                    </div> */}
+
                     <div className="form-fixture-align">
                         <div className="form-group">
                             {/* <label className ="form-labels">Home Team</label> */}
@@ -271,3 +227,49 @@ render() {
         )
     }
 }
+
+                    {/* <div className="form-group editableFormGroup">
+                        <label className ="form-labels">Betting Weekend</label>
+                        <select id="what-weekend-is-it" class="form-answer-box form-answer-box-dropdown"  value={this.state.betting_weekend_selector} onChange={this.onChangeBettingWeekendSelector} required>
+                            <option value="BW1">Betting Weekend 1</option>
+                            <option value="BW2">Betting Weekend 2</option>
+                            <option value="BW3">Betting Weekend 3</option>
+                            <option value="BW4">Betting Weekend 4</option>
+                            <option value="BW5">Betting Weekend 5</option>
+                            <option value="BW6">Betting Weekend 6</option>
+                            <option value="BW7">Betting Weekend 7</option>
+                            <option value="BW8">Betting Weekend 8</option>
+                            <option value="BW9">Betting Weekend 9</option>
+                            <option value="BW10">Betting Weekend 10</option>
+                            <option value="BW11">Betting Weekend 11</option>
+                            <option value="BW12">Betting Weekend 12</option>
+                            <option value="BW13">Betting Weekend 13</option>
+                            <option value="BW14">Betting Weekend 14</option>
+                            <option value="BW15">Betting Weekend 15</option>
+                            <option value="BW16">Betting Weekend 16</option>
+                            <option value="BW17">Betting Weekend 17</option>
+                            <option value="BW18">Betting Weekend 18</option>
+                            <option value="BW19">Betting Weekend 19</option>
+                            <option value="BW20">Betting Weekend 20</option>
+                            <option value="BW21">Betting Weekend 21</option>
+                            <option value="BW22">Betting Weekend 22</option>
+                            <option value="BW23">Betting Weekend 23</option>
+                            <option value="BW24">Betting Weekend 24</option>
+                            <option value="BW25">Betting Weekend 25</option>
+                            <option value="BW26">Betting Weekend 26</option>
+                            <option value="BW27">Betting Weekend 27</option>
+                            <option value="BW28">Betting Weekend 28</option>
+                            <option value="BW29">Betting Weekend 29</option>
+                            <option value="BW30">Betting Weekend 30</option>
+                            <option value="BW31">Betting Weekend 31</option>
+                            <option value="BW32">Betting Weekend 32</option>
+                            <option value="BW33">Betting Weekend 33</option>
+                            <option value="BW34">Betting Weekend 34</option>
+                            <option value="BW35">Betting Weekend 35</option>
+                            <option value="BW36">Betting Weekend 36</option>
+                            <option value="BW37">Betting Weekend 37</option>
+                            <option value="BW38">Betting Weekend 38</option>
+                            <option value="BW39">Betting Weekend 39</option>
+                            <option value="BW40">Betting Weekend 40</option>
+                        </select>    
+                    </div> */}

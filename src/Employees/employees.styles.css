@@ -54,7 +54,9 @@
 }
 .oddsAndOutcomeBox{
     display: flex;
-    justify-content: center
+    justify-content: center;
+    align-items: center;
+    height: 20%
 }
 .employee-card-text-outcome{
     margin-left: 3%;
@@ -115,4 +117,12 @@ li{
     margin-right: auto;
     margin-top: 7%;
     margin-bottom: -10%;
+}
+
+@media screen and (max-width: 700px){
+
+.form-and-table-container {
+    display: grid;
+
+}
 }

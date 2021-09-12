@@ -12,6 +12,7 @@ import Week1 from "../Week1/week1.jsx"
 import Week2 from "../Week2/week2.jsx"
 import Week3 from "../Week3/week3.jsx"
 import Week4 from "../Week4/week4.jsx"
+import Week5 from "../Week5/week5.jsx"
 
 
 // THIS SECTION CAN BE DELETED ONCE PEOPLEHR FULLY INTEGRATED 
@@ -81,6 +82,7 @@ return(
         
         <div className="container ">
             <div class="card_container">
+                <Week5 />
                 <Week4 />
                 <Week3 />
                 <Week2 />
