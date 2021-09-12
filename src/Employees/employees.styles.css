@@ -141,4 +141,20 @@ li{
     width: 160%;
     margin-left: -33%
 }
+.iframe-table{
+    width: 90%;
+    height: 500px;
+    margin-bottom: 25%;
+    color:white;
+    background: #21313C;
+
+}
+.single-bet-card{
+    width:180px;
+    height:190px ;
+    font-size: 10px !important;
+
+    margin-top:5%;
+    margin-right:3%;
+}
 }
