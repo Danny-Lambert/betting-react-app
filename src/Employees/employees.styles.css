@@ -125,10 +125,9 @@ li{
     display: grid;
 }
 .iframe-chart{
-    transform: scale(0.7);
+    transform: scale(0.6);
     margin: 0%;
-    width: 141%;
-    margin-left: -24%;
-
+    width: 160%;
+    margin-left: -33%
 }
 }
