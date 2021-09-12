@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "server",
+			"path": "..\\..\\..\\betting-demo-project\\server"
+		},
+		{
+			"name": "betting-react-app",
+			"path": ".."
+		}
+	],
+	"settings": {}
+}
