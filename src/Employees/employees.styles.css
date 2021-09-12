@@ -123,6 +123,12 @@ li{
 
 .form-and-table-container {
     display: grid;
+}
+.iframe-chart{
+    transform: scale(0.7);
+    margin: 0%;
+    width: 141%;
+    margin-left: -24%;
 
 }
 }
