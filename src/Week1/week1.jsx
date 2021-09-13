@@ -4,7 +4,6 @@ import React, {useState, useEffect} from 'react'
 import axios from 'axios'
 // import 'bootstrap/dist/css/bootstrap.min.css'
 import '../Week1/week1.css'
-import { Async } from 'react-async'
 
 
 // THIS SECTION CAN BE DELETED ONCE PEOPLEHR FULLY INTEGRATED 
