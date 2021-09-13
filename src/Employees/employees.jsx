@@ -70,12 +70,12 @@ return(
                 <img src ={r2rlogo} alt="r2rlogo" class="r2r-logo" />
                 <Form />
             </div>
-        <div className="container">
-            <div class="row">
-                <iframe class= "iframe-chart" src="https://charts.mongodb.com/charts-project-0-yabzy/embed/charts?id=0939b01d-2239-4be9-9248-1dabbf88dcb2&autoRefresh=10&theme=dark"/>            
+        <div className="iframe-and-betslip-container">
+            <div class="row iframe-row">
+                <iframe class= "iframe-chart col-12" src="https://charts.mongodb.com/charts-project-0-yabzy/embed/charts?id=0939b01d-2239-4be9-9248-1dabbf88dcb2&autoRefresh=10&theme=dark"/>            
             </div>        
             <div class="row">
-            <CurrentWeekBetslip />
+            <CurrentWeekBetslip class="col-12"/>
             </div>
             </div>
         </div>

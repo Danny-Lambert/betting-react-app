@@ -15,7 +15,7 @@ function CurrentWeekBetslip(db){
     const [bets, setBets] = useState([])
     
     useEffect(() => {
-        axios.get('http://localhost:3000/api/week5')
+        axios.get('http://localhost:3000/api/week6')
         .then(res => {
             // console.log(res)
             setBets(res.data)

@@ -10,12 +10,12 @@ import '../Week5/week5.css'
 // CAN USE AS EXAMPLE CALLS TO MONGODB FOR WHATEVER YOU DO NOT GRAB FROM SALESFORCE OR PEOPLEHR
 
 
-function Week5(db){
+function Week6(db){
 
     const [bets, setBets] = useState([])
     
     useEffect(() => {
-        axios.get('http://localhost:3000/api/week5')
+        axios.get('http://localhost:3000/api/week6')
         .then(res => {
             // console.log(res)
             setBets(res.data)
@@ -68,4 +68,4 @@ function Week5(db){
 
       )
 }
-export default Week5
+export default Week6

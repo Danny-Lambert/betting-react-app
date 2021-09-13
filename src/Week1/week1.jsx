@@ -4,6 +4,7 @@ import React, {useState, useEffect} from 'react'
 import axios from 'axios'
 // import 'bootstrap/dist/css/bootstrap.min.css'
 import '../Week1/week1.css'
+import { Async } from 'react-async'
 
 
 // THIS SECTION CAN BE DELETED ONCE PEOPLEHR FULLY INTEGRATED 
@@ -12,7 +13,6 @@ import '../Week1/week1.css'
 
 
 function Week1(db){
-
     const [bets, setBets] = useState([])
     
     useEffect(() => {
@@ -27,13 +27,16 @@ function Week1(db){
         })
     })
     console.log(bets.outcome_of_bet_won)
+
     
     // renderElement(){
     //     if(this.outcome_of_bet_won.value == 1 )
     //        return <p>Won</p>;
     //     return <p>Lost</p>;
     //  }}
-    return(  
+    return( 
+
+
         <div class="card_container weekly-betslip-card_container">
             <h2 class="weekly-bet-h2">Bet Week 1 - <span className="weekly-h2-lost">Lost</span>  3/6 (10.91) </h2>
         <ul className = "current-week-betslip-employees-list">
@@ -70,7 +73,7 @@ function Week1(db){
             }
         </ul>
         </div>
-
+      
 
     )
 }

@@ -10,12 +10,12 @@ import '../Week5/week5.css'
 // CAN USE AS EXAMPLE CALLS TO MONGODB FOR WHATEVER YOU DO NOT GRAB FROM SALESFORCE OR PEOPLEHR
 
 
-function Week5(db){
+function Week8(db){
 
     const [bets, setBets] = useState([])
     
     useEffect(() => {
-        axios.get('http://localhost:3000/api/week5')
+        axios.get('http://localhost:3000/api/week8')
         .then(res => {
             // console.log(res)
             setBets(res.data)
@@ -29,7 +29,7 @@ function Week5(db){
 
     return(  
         <div class="card_container weekly-betslip-card_container">
-            <h2 class="weekly-bet-h2">Bet Week 5 - <span className="weekly-h2-free-bet">Lost - Free Bet</span>  5/6   (Odds - 16.5) </h2>
+            <h2 class="weekly-bet-h2">Bet Week 5 - <span className="weekly-h2-lost">Lost</span>  4/6   (Odds - 12.2) </h2>
         <ul className = "current-week-betslip-employees-list">
             {   
                 bets.map(post => <li key={post.id}>
@@ -68,4 +68,4 @@ function Week5(db){
 
       )
 }
-export default Week5
+export default Week8
