@@ -25,7 +25,6 @@ function Week1(db){
             console.log(err)
         })
     })
-    console.log(bets.outcome_of_bet_won)
 
     
     // renderElement(){

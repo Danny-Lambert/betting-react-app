@@ -139,7 +139,7 @@ import '../Form/form.styles.css'
 
         };
             // NEED TO CHANGE THIS ENDPOINT
-        axios.post('http://localhost:3000/api/week5', userObject)
+        axios.post('http://localhost:3000/api/week6', userObject)
             .then((res) => {
                 console.log(res.data)
             }).catch((error) => {
@@ -154,7 +154,7 @@ import '../Form/form.styles.css'
             //     console.log(error)
             // });
 
-     }
+}
 
 
 render() {
@@ -220,7 +220,6 @@ render() {
                     </div>
                 </form>
                 </div>
-         
             </div>
             </div>
 
