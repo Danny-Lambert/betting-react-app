@@ -1,4 +1,4 @@
-import React, {useState, useEffect, Component} from 'react'
+import React, {useState, useEffect} from 'react'
 // import '../employees/employees.styles.css'
 import axios from 'axios'
 // import 'bootstrap/dist/css/bootstrap.min.css'

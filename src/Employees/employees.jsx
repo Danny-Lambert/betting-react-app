@@ -1,4 +1,4 @@
-import React, {useState, useEffect, Component} from 'react'
+import React, {useState, useEffect} from 'react'
 // import '../employees/employees.styles.css'
 // import ChartsEmbedSDK from '@mongodb-js/charts-embed-dom';
 import axios from 'axios'
@@ -34,8 +34,11 @@ function Employees(db){
         .catch(err => {
             console.log(err)
         })
+
+        
     })
  
+
 
         // const [posts, setPosts] = useState([])
     
@@ -59,15 +62,42 @@ function Employees(db){
     // var cursor = db.collection('bets').find({});
     // db.collection.find( { who_is_it: "Danny",   outcome_of_bet: "Won" } ).count();
 
+    document.addEventListener("DOMContentLoaded", () => {
+        function counter(id, start, end, duration) {
+         let obj = document.getElementById(id),
+          current = start,
+          range = end - start,
+          increment = end > start ? 1 : -1,
+          step = Math.abs(Math.floor(duration / range)),
+          timer = setInterval(() => {
+           current += increment;
+           obj.textContent = current;
+           if (current == end) {
+            clearInterval(timer);
+           }
+          }, step);
+        }
+        counter("count1", 0, 10, 3000);
+        counter("count2", 100, 21, 2500);
+        counter("count3", 0, 40, 3000);
+       });
+       
 
-    
 
 
 return(
     <div className= "full-page-main-page">
         <div className="form-and-table-container">
             <div class="col">
-                <img src ={r2rlogo} alt="r2rlogo" class="r2r-logo" />
+                <div className="logo-container">
+                <div id="container">
+                    <div class="top left " >£<span id="count1" className="count"></span></div>
+                    <div class="top right " id=""><span id="count2" className="count"></span></div>
+                    <div class="bottom left" id=""><span id="count3" className="count"></span></div>
+                    <div class="bottom right" id=""><span id="count4" className="count"></span></div>
+                    <img src ={r2rlogo} alt="r2rlogo" class="r2r-logo" />
+                </div>
+                </div>
                 <Form />
             </div>
         <div className="iframe-and-betslip-container">
@@ -119,7 +149,7 @@ return(
             </div>
                     </li>)
             }
-        </ul> */}
+            </ul> */}
     </div>
     )
 }
