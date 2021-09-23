@@ -20,7 +20,9 @@
     "express": "^4.17.1",
     "mongoose": "^6.0.5"
   },
-
+  "scripts": {
+    "npm start": "npx nodemon server.js"
+    },
   "eslintConfig": {
     "extends": [
       "react-app",
