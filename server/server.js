@@ -8,14 +8,8 @@ const MongoClient = require('mongodb').MongoClient;
 const createRouter = require('./create_routers.js');
 const assert = require('assert');
 
-app.use(express.json());
-app.use(cors({credentials: true, origin: "*"}));
-
-//Need to hide these credentials of username and password 
-// const USERNAME = process.env.USERNAME
-// const PASSWORD = process.env.PASSWORD
-
 let URI = "mongodb+srv://danny:Danny12345@group-betting.n04jv.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+
 
 MongoClient.connect(URI, {useUnifiedTopology: true, useNewUrlParser: true})
 // MongoClient.connect('mongodb://localhost:27017')
@@ -55,6 +49,16 @@ MongoClient.connect(URI, {useUnifiedTopology: true, useNewUrlParser: true})
 
   })
   .catch(console.err);
+
+app.use(express.json());
+app.use(cors({credentials: true, origin: "*"}));
+
+//Need to hide these credentials of username and password 
+// const USERNAME = process.env.USERNAME
+// const PASSWORD = process.env.PASSWORD
+
+
+
 
   http.listen(3000, function() {
     console.log(`Listening on port ${this.address().port}`);
