@@ -11,7 +11,7 @@
     background-color: rgb(12, 12, 12);
     width: 95%;
     margin: 2%;
-    margin-top: -2%;
+    margin-top: 5%;
     border-radius: 5%;
     border-radius: 10px;
     box-shadow: 0 0 10px lightgrey;
@@ -19,8 +19,7 @@
 .this-weeks-bet-h2{
     color: white;
     text-align: center;
-    margin-top: 1%;
-    margin-bottom: -1%;
+    padding-top: 5%;
     font-size: 25px;
 }
 .bet-text-h3{

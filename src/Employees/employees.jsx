@@ -102,7 +102,7 @@ return(
             </div>
         <div className="iframe-and-betslip-container">
             <div class="row iframe-row">
-                <iframe class= "iframe-chart col-12" src="https://charts.mongodb.com/charts-project-0-yabzy/embed/charts?id=0939b01d-2239-4be9-9248-1dabbf88dcb2&autoRefresh=10&theme=dark"/>            
+                {/* <iframe class= "iframe-chart col-12" src="https://charts.mongodb.com/charts-project-0-yabzy/embed/charts?id=0939b01d-2239-4be9-9248-1dabbf88dcb2&autoRefresh=10&theme=dark"/>             */}
             </div>        
             <div class="row">
             <CurrentWeekBetslip class="col-12"/>
@@ -120,7 +120,7 @@ return(
             </div>
         </div>
         <div class="row bottom-charts">
-        <iframe class= "iframe-table" src="https://charts.mongodb.com/charts-project-0-yabzy/embed/charts?id=d16819a3-c36d-414d-9b60-d977c7b0d700&autoRefresh=10&theme=dark"/>            
+        {/* <iframe class= "iframe-table" src="https://charts.mongodb.com/charts-project-0-yabzy/embed/charts?id=d16819a3-c36d-414d-9b60-d977c7b0d700&autoRefresh=10&theme=dark"/>             */}
         </div>         
         {/* <ul className = "employees-list">
             {   
