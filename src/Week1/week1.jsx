@@ -13,7 +13,7 @@ import '../Week1/week1.css'
 
 function Week1(db){
     const [bets, setBets] = useState([])
-    
+
     useEffect(() => {
         axios.get('http://localhost:3000/api/week1')
         .then(res => {
@@ -25,6 +25,7 @@ function Week1(db){
             console.log(err)
         })
     })
+
 
     
     // renderElement(){
@@ -75,4 +76,5 @@ function Week1(db){
 
     )
 }
+
 export default Week1

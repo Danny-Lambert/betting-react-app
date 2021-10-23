@@ -15,7 +15,6 @@ MongoClient.connect(URI, {useUnifiedTopology: true, useNewUrlParser: true})
 // MongoClient.connect('mongodb://localhost:27017')
   .then((record) => {
     const db = record.db('bets');
-
     //  your atlas collection name below
     const atlasCollection = db.collection('bets');
     const atlasRouter = createRouter(atlasCollection);

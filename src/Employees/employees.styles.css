@@ -175,13 +175,15 @@ li{
 }
 .r2r-logo{
     z-index: -1;
-    /* transform: scale(2); */
+    transform: scale(2);
+    display: flex;
+    justify-content: center;
 }
 #container {
     position: relative;
     width: 80%;
     height: 250px;
-    background: green;
+    font-size: 5px;
   }
   #container div {
     position: absolute;
