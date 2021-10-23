@@ -20,7 +20,7 @@ class App extends Component {
     };
   }
   render() {
-    setTimeout(() => {this.setState({timePassed: true})}, 5000);
+    setTimeout(() => {this.setState({timePassed: true})}, 10000);
     if (!this.state.timePassed){
       return (      
         <div><p>Loading . . .  </p></div>
